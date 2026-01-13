@@ -6,6 +6,10 @@ class Game:
             "Hall":Room("Hall","You are in a new made hall",south="Start")
         }
         self.current_room = self.rooms["Start"]
+        self.inventory = {
+            "key": "it open a questionable lock",
+            "Spoon":"Its just a spoon"
+        }
     def get_description(self):
         return self.current_room.get_description()
 
