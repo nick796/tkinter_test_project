@@ -3,7 +3,8 @@ class Game:
     def __init__(self):
         self.rooms = {
             "Start": Room("Start","You are in a dark room.",north="Hall",east="MonkLand"),
-            "Hall":Room("Hall","You are in a new made hall",south="Start")
+            "Hall":Room("Hall","You are in a new made hall",south="Start"),
+            "MonkLand":Room("MonkLand",'You reached the Monkland')
         }
         self.current_room = self.rooms["Start"]
         self.inventory = {

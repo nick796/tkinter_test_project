@@ -26,13 +26,13 @@ class GameUI:
         for d in ['north','south','east','west']:
             btn = ttk.Button(button_frame, text=d.capitalize(),
                              command=lambda dir=d: self.move(dir))
-            btn.pack(side='left',padx=5)
+            btn.pack(side='left',padx=15,pady=20)
             self.buttons[d] = btn
 
         # RIGHT SIDE (inventory)
         self.inventory_frame = ttk.Frame(main_frame, relief="sunken", padding=10)
 
-        self.inventory_frame.pack(side="right", fill="y")
+        self.inventory_frame.pack(side="right", fill="y",padx=20,pady=20)
 
         self.inventory_title_frame = ttk.Frame(self.inventory_frame, relief="sunken", padding=10)
         self.inventory_title_frame.pack()
